@@ -2,7 +2,7 @@ package com.matheus.helpdesk.domain.enums;
 
 public enum Perfil {
 
-    ADMIN(0, "ROLE_ADMIN"), CLIENTE(1, "ROLE_CLIENTE"), TECNICO(2, "ROLE_TECNICO");
+    ADMIN("ROLE_ADMIN", 0), CLIENTE("ROLE_CLIENTE", 1), TECNICO("ROLE_TECNICO", 2);
 
     private Integer codigo;
     private String descricao;

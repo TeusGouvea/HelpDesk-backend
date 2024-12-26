@@ -2,7 +2,7 @@ package com.matheus.helpdesk.domain.enums;
 
 public enum Status {
 
-    ABERTO(0, "ABERTO"), ANDAMENTO(1, "ANDAMENTO"), ENCERRADO(2, "ENCERRADO");
+    ABERTO("ABERTO", 0), ANDAMENTO("ANDAMENTO", 1), ENCERRADO("ENCERRADO", 2);
 
     private Integer codigo;
     private String descricao;

@@ -2,7 +2,7 @@ package com.matheus.helpdesk.domain.enums;
 
 public enum Prioridade {
 
-    BAIXA(0, "BAIXA"), MEDIA(1, "MEDIA"), ALTA(2, "ALTA");
+    BAIXA("BAIXA", 0), MEDIA("MEDIA", 1), ALTA("ALTA", 2);
 
     private Integer codigo;
     private String descricao;
