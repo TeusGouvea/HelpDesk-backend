@@ -64,7 +64,12 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-	</dependencies>
+        <dependency>
+            <groupId>com.github.911992</groupId>
+            <artifactId>WebSocket_HandshakeRequest_to_Servlet31_HttpServletRequest_Wrapper</artifactId>
+            <version>0.1.0</version>
+        </dependency>
+    </dependencies>
 
 	<build>
 		<plugins>
