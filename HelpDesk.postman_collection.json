@@ -1,0 +1,392 @@
+{
+	"info": {
+		"_postman_id": "5b814b28-5dc7-4d2f-973d-fba0c43b90b5",
+		"name": "HelpDesk",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "39523297"
+	},
+	"item": [
+		{
+			"name": "Tecnico",
+			"item": [
+				{
+					"name": "findById",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{local}}/tecnicos/5",
+							"host": [
+								"{{local}}"
+							],
+							"path": [
+								"tecnicos",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "findAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/tecnicos",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"tecnicos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJtYXRoZXVzQG1haWwuY29tIiwiZXhwIjoxNzM2MjgzODU4fQ.7DURgoJbyPHI5_MnAzOii31kYHjOUrv6GeG-WKKx-Ww2-0yxJJr3SbGHbj1keqMxxCuGBSqEH77alaXun8k-1g",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\": \"Pedro Teste\",\r\n    \"cpf\": \"555.444.111-22\",\r\n    \"email\": \"teste@mail.com\",\r\n    \"senha\": \"123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{local}}/tecnicos",
+							"host": [
+								"{{local}}"
+							],
+							"path": [
+								"tecnicos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "uptdate",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{local}}/tecnicos/1",
+							"host": [
+								"{{local}}"
+							],
+							"path": [
+								"tecnicos",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{local}}/tecnicos/1",
+							"host": [
+								"{{local}}"
+							],
+							"path": [
+								"tecnicos",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Cliente",
+			"item": [
+				{
+					"name": "findById",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{local}}/clientes/1",
+							"host": [
+								"{{local}}"
+							],
+							"path": [
+								"clientes",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "findAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/clientes",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"clientes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\": \"Teste\",\r\n    \"cpf\": \"555.444.111-22\",\r\n    \"email\": \"teste@mail.com\",\r\n    \"senha\": \"123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{local}}/clientes",
+							"host": [
+								"{{local}}"
+							],
+							"path": [
+								"clientes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "uptdate",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{local}}/clientes/1",
+							"host": [
+								"{{local}}"
+							],
+							"path": [
+								"clientes",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{local}}/clientes/1",
+							"host": [
+								"{{local}}"
+							],
+							"path": [
+								"clientes",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Chamado",
+			"item": [
+				{
+					"name": "findById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{local}}/chamados/1",
+							"host": [
+								"{{local}}"
+							],
+							"path": [
+								"chamados",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "findAll",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJtYXRoZXVzQG1haWwuY29tIiwiZXhwIjoxNzM2MjgzODU4fQ.7DURgoJbyPHI5_MnAzOii31kYHjOUrv6GeG-WKKx-Ww2-0yxJJr3SbGHbj1keqMxxCuGBSqEH77alaXun8k-1g",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{local}}/chamados",
+							"host": [
+								"{{local}}"
+							],
+							"path": [
+								"chamados"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"prioridade\": 1,\r\n    \"status\": 1,\r\n    \"titulo\": \"Chamado teste create\",\r\n    \"observacoes\": \"teste create\",\r\n    \"tecnico\": 1,\r\n    \"cliente\": 6\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/chamados",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"chamados"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"dataAbertura\": \"06/01/2025\",\r\n    \"prioridade\": 2,\r\n    \"status\": 0,\r\n    \"titulo\": \"Chamado 2\",\r\n    \"observacoes\": \"Teste chamado 2\",\r\n    \"tecnico\": 1,\r\n    \"cliente\": 7\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{local}}/chamados/2",
+							"host": [
+								"{{local}}"
+							],
+							"path": [
+								"chamados",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "{{local}}/login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"matheus@mail.com\",\r\n    \"senha\": \"123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{local}}/login",
+					"host": [
+						"{{local}}"
+					],
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
