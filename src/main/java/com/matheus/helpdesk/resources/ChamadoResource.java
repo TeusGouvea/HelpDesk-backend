@@ -3,7 +3,7 @@ package com.matheus.helpdesk.resources;
 import com.matheus.helpdesk.Services.ChamadoService;
 import com.matheus.helpdesk.domain.Chamado;
 import com.matheus.helpdesk.domain.dtos.ChamadoDTO;
-import jakarta.validation.Valid;
+import javax.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

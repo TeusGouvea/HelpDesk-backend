@@ -3,7 +3,7 @@ package com.matheus.helpdesk.domain.dtos;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.matheus.helpdesk.domain.Tecnico;
 import com.matheus.helpdesk.domain.enums.Perfil;
-import jakarta.validation.constraints.NotNull;
+import javax.validation.constraints.NotNull;
 
 
 import java.io.Serializable;

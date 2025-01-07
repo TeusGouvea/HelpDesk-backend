@@ -4,7 +4,7 @@ package com.matheus.helpdesk.resources;
 import com.matheus.helpdesk.Services.ClienteService;
 import com.matheus.helpdesk.domain.Cliente;
 import com.matheus.helpdesk.domain.dtos.ClienteDTO;
-import jakarta.validation.Valid;
+import javax.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

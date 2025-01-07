@@ -9,7 +9,7 @@ import com.matheus.helpdesk.domain.Tecnico;
 import com.matheus.helpdesk.domain.dtos.ChamadoDTO;
 import com.matheus.helpdesk.domain.enums.Prioridade;
 import com.matheus.helpdesk.domain.enums.Status;
-import jakarta.validation.Valid;
+import javax.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

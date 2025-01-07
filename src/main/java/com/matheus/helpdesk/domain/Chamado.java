@@ -3,7 +3,7 @@ package com.matheus.helpdesk.domain;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.matheus.helpdesk.domain.enums.Prioridade;
 import com.matheus.helpdesk.domain.enums.Status;
-import jakarta.persistence.*;
+import javax.persistence.*;
 
 import java.io.Serializable;
 import java.time.LocalDate;
@@ -121,13 +121,27 @@ public class Chamado implements Serializable {
     }
 
     @Override
-    public boolean equals(Object o) {
-        if (!(o instanceof Chamado chamado)) return false;
-        return Objects.equals(id, chamado.id);
+    public boolean equals(Object obj) {
+        if (this == obj)
+            return true;
+        if (obj == null)
+            return false;
+        if (getClass() != obj.getClass())
+            return false;
+        Chamado other = (Chamado) obj;
+        if (id == null) {
+            if (other.id != null)
+                return false;
+        } else if (!id.equals(other.id))
+            return false;
+        return true;
     }
 
     @Override
     public int hashCode() {
-        return Objects.hashCode(id);
+        final int prime = 31;
+        int result = 1;
+        result = prime * result + ((id == null) ? 0 : id.hashCode());
+        return result;
     }
 }
