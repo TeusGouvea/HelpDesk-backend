@@ -34,6 +34,7 @@ public class DBService {
         Tecnico tec3 = new Tecnico(null, "Claude Elwood Shannon", "271.068.470-54", "shannon@mail.com", encoder.encode("123"));
         Tecnico tec4 = new Tecnico(null, "Tim Berners-Lee", "162.720.120-39", "lee@mail.com", encoder.encode("123"));
         Tecnico tec5 = new Tecnico(null, "Bruce Rock", "244.155.620-78", "bl@mail.com", encoder.encode("123"));
+        tec5.addPerfil(Perfil.ADMIN);
 
         Cliente cli1 = new Cliente(null,"Linus Torvalds","37608118849", "torvalds@mail.com",encoder.encode("123"));
         Cliente cli2 = new Cliente(null, "Marie Curie", "322.429.140-06", "curie@mail.com", encoder.encode("123"));
