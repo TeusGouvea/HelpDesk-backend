@@ -29,12 +29,15 @@ public class DBService {
     public void instanciaDB() {
 
         Tecnico tec1 = new Tecnico(null,"Matheus Gouvêa", "778.556.170-27", "matheus@mail.com", encoder.encode("123"));
-        tec1.addPerfil(Perfil.ADMIN);
+        tec1.addPerfil(Perfil.ADMIN);  tec1.addPerfil(Perfil.TECNICO);
         Tecnico tec2 = new Tecnico(null, "Richard Stallman", "903.347.070-56", "stallman@mail.com", encoder.encode("123"));
+        tec2.addPerfil(Perfil.TECNICO);
         Tecnico tec3 = new Tecnico(null, "Claude Elwood Shannon", "271.068.470-54", "shannon@mail.com", encoder.encode("123"));
+        tec3.addPerfil(Perfil.TECNICO);
         Tecnico tec4 = new Tecnico(null, "Tim Berners-Lee", "162.720.120-39", "lee@mail.com", encoder.encode("123"));
+        tec4.addPerfil(Perfil.TECNICO);
         Tecnico tec5 = new Tecnico(null, "Bruce Rock", "244.155.620-78", "bl@mail.com", encoder.encode("123"));
-        tec5.addPerfil(Perfil.ADMIN);
+        tec5.addPerfil(Perfil.TECNICO);
 
         Cliente cli1 = new Cliente(null,"Linus Torvalds","37608118849", "torvalds@mail.com",encoder.encode("123"));
         Cliente cli2 = new Cliente(null, "Marie Curie", "322.429.140-06", "curie@mail.com", encoder.encode("123"));
