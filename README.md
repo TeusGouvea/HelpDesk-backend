@@ -1,4 +1,6 @@
 Descrição do Projeto
+
+
 Este projeto visa a criação de uma API Restful utilizando Java com Spring Boot 2.3.12, integrando com banco de dados MySQL. A API foi construída utilizando JPA com Hibernate para a persistência de dados, garantindo uma integração eficiente com o banco.
 
 Além disso, o projeto abrange as seguintes funcionalidades:
